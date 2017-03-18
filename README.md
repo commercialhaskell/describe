@@ -1,6 +1,6 @@
 # describe
 
-Describe Haskell code using template Haskell
+Describe Haskell code in GHCi
 
 ## Example
 
