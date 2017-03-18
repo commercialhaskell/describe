@@ -7,8 +7,8 @@ Describe Haskell code using template Haskell
 The main use-case is figuring out how GHC parses infix operators:
 
 ``` haskell
-> :describe x <$> y <*> z <* p <|> k
-(((x Data.Functor.<$> y) GHC.Base.<*> z) GHC.Base.<* p) GHC.Base.<|> k
+> :describe x <$> y <|> h <* p <*> k
+(x Data.Functor.<$> y) GHC.Base.<|> ((h GHC.Base.<* p) GHC.Base.<*> k)
 ```
 
 Tada!
