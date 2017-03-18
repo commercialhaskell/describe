@@ -2,6 +2,17 @@
 
 Describe Haskell code using template Haskell
 
+## Example
+
+The main use-case is figuring out how GHC parses infix operators:
+
+``` haskell
+ :describe x <$> y <*> z <* p <|> k
+(((x Data.Functor.<$> y) GHC.Base.<*> z) GHC.Base.<* p) GHC.Base.<|> k
+```
+
+Tada!
+
 ## Setup
 
 Install the package by running `sh global-install.sh`.
@@ -14,24 +25,6 @@ import Describe
 :set -XTemplateHaskell
 :def describe \e -> return ("$(describe [| " ++ e ++ " |])")
 ```
-
-Then you can use `:describe <expression>`:
-
-``` haskell
-> :describe x * y
-x GHC.Num.* y
-```
-
-## Example
-
-The main use-case is figuring out how GHC parses infix operators:
-
-``` haskell
-> $(describe [| x <$> y <*> z |])
-(x Data.Functor.<$> y) GHC.Base.<*> z
-```
-
-Tada!
 
 ## Pitfalls
 
