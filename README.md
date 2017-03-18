@@ -4,7 +4,7 @@ Describe Haskell code in GHCi
 
 ## Example
 
-The main use-case is figuring out how GHC parses infix operators:
+The main use-case is figuring out how infix operators are parsed:
 
 ``` haskell
 > :describe x <$> y <|> h <* p <*> k
