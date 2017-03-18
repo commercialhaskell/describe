@@ -15,7 +15,11 @@ Tada!
 
 ## Setup
 
-Install the package by running `sh global-install.sh` (requires stack).
+Install the package by running:
+
+    git clone https://github.com/commercialhaskell/describe.git
+    cd describe
+    sh global-install.sh # requires stack
 
 Add the following to your `~/.ghci` or just run it in your current session:
 
