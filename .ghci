@@ -1,0 +1,4 @@
+:set -package describe
+import Describe
+:set -XTemplateHaskell
+:def describe \e -> return ("$(describe [| " ++ e ++ " |])")

@@ -21,15 +21,6 @@ Install the package by running:
     cd describe
     sh global-install.sh # requires stack
 
-Add the following to your `~/.ghci` or just run it in your current session:
-
-``` haskell
-:set -package describe
-import Describe
-:set -XTemplateHaskell
-:def describe \e -> return ("$(describe [| " ++ e ++ " |])")
-```
-
 ## Pitfalls
 
 If you use something out of scope, you'll see
