@@ -15,7 +15,7 @@ Tada!
 
 ## Setup
 
-Install the package by running `sh global-install.sh`.
+Install the package by running `sh global-install.sh` (requires stack).
 
 Add the following to your `~/.ghci` or just run it in your current session:
 
