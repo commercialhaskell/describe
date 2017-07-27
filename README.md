@@ -13,13 +13,21 @@ The main use-case is figuring out how infix operators are parsed:
 
 Tada!
 
-## Setup
+## Setup (Linux, macOS)
 
 Install the package by running:
 
     git clone https://github.com/commercialhaskell/describe.git
     cd describe
     sh global-install.sh # requires stack
+
+## Setup (Windows)
+
+From a PowerShell terminal, install the package by running:
+
+    git clone https://github.com/commercialhaskell/describe.git
+    cd describe
+    .\global-install.ps1 # requires stack
 
 ## Pitfalls
 
